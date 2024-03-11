@@ -140,8 +140,5 @@ input[type="submit"]:hover {
 
 .step-indicator.active .step-number {
   background-color: #4caf50; /* Change color for active step */
-}
-
-.step-indicator.active {
-  color: #4caf50; /* Change text color for active step */
+  color: #fff; /* Change text color for active step */
 }
