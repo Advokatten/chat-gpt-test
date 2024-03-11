@@ -15,15 +15,15 @@ body {
 }
 
 .step-indicator-box {
-  background-color: rgb(85, 58, 222,);
-  padding: 50px;
+  background-color: #ddd;
+  padding: 30px; /* Increased padding */
   border-radius: 8px;
 }
 
-.step-indicators {
+.step-indicator {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .step-indicator {
@@ -38,13 +38,20 @@ body {
 }
 
 .step-number {
-  color: #fff;
-  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
 }
 
 .step-indicator.active .step-number {
   background-color: #4caf50; 
 }
+
 
 .form-container {
   flex: 1;
