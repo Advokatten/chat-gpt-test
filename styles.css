@@ -51,10 +51,11 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  color: rgb( 85, 58, 222);
 }
 
 .step-indicator.active .step-number {
-  background-color: #4caf50; 
+  background-color: #57ca5b; 
 }
 
 
