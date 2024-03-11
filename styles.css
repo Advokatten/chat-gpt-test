@@ -112,3 +112,36 @@ input[type="submit"]:hover {
   background-color: #4caf50;
   color: #fff;
 }
+
+.step-indicators {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.step-indicator.active .step-number {
+  background-color: #4caf50; /* Change color for active step */
+}
+
+.step-indicator.active {
+  color: #4caf50; /* Change text color for active step */
+}
