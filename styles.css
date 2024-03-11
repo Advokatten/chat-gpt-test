@@ -8,14 +8,16 @@ body {
 .container {
   max-width: 800px;
   margin: 50px auto;
-  background-color: #ddd;
-  padding: 20px;
-  border-radius: 8px;
 }
 
 .content-box {
   display: flex;
-  flex-direction: column;
+}
+
+.step-indicator-box {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .step-indicators {
@@ -45,15 +47,14 @@ body {
 }
 
 .form-container {
-  flex: 1; /* Take up the remaining space */
+  flex: 1;
+  margin-left: 20px;
 }
 
 .step-container {
-  flex: 1;
   background-color: #ddd;
   padding: 20px;
   border-radius: 8px;
-  margin-left: 20px;
 }
 
 .step {
