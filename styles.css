@@ -16,12 +16,7 @@ body {
 .container {
   max-width: 800px;
   margin: 50px auto;
-  background-color: purple; /* Change background color to purple */
-  border-radius: 8px; /* Add border radius for rounded corners */
-  padding: 20px; /* Add padding for spacing inside the container */
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Align items to the top */
 }
 
 .step-indicator {
