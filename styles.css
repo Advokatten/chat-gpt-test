@@ -17,7 +17,7 @@ body {
 .step-indicator-box {
   background-color: #ddd;
   padding: 30px; /* Increased padding */
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .step-indicator {
