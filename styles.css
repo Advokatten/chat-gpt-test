@@ -9,15 +9,24 @@ body {
   max-width: 800px;
   margin: 50px auto;
   display: flex;
+  flex-direction: column; /* Adjusted to column layout */
 }
 
 .step-indicators {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .step-indicator {
+  display: flex;
+  align-items: center;
+}
+
+.step-number {
   width: 30px;
   height: 30px;
   background-color: #ccc;
@@ -25,12 +34,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.step-number {
-  color: #fff;
-  font-weight: bold;
+.step-indicator.active .step-number {
+  background-color: #4caf50; /* Change color for active step */
+  color: #fff; /* Change text color for active step */
 }
 
 .step-container {
@@ -111,34 +120,4 @@ input[type="submit"]:hover {
 .selected {
   background-color: #4caf50;
   color: #fff;
-}
-
-.step-indicators {
-  display: flex;
-  justify-content: space-between;
-  background-color: #ddd;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.step-indicator {
-  display: flex;
-  align-items: center;
-}
-
-.step-number {
-  width: 30px;
-  height: 30px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.step-indicator.active .step-number {
-  background-color: #4caf50; /* Change color for active step */
-  color: #fff; /* Change text color for active step */
 }
