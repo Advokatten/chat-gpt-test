@@ -1,87 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Account Creation</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcus's Coffee</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="content-box">
-        <div class="step-indicator-box">
-            <div class="step-indicator active">
-              <span class="step-number">1</span> 
-              <p class="text">Personal info</p>
-            </div>
-            <div class="step-indicator">
-              <span class="step-number">2</span> 
-              <p class="text">Select plan</p>
-            </div>
-            <div class="step-indicator">
-              <span class="step-number">3</span> 
-              <p class="text">Pick add-ons</p>
-            </div>
-            <div class="step-indicator">
-              <span class="step-number">4</span>
-              <p class="text">Finishing up</p>
+  <section class="menu-section">
+    <div class="outer-container">
+        <div class="menu-container">
+          <div class="menu-left">
+            <div class="left-box">
+              <ol>
+                <li class="menu-item menu-item-current">
+                  <div class="step-circle">1</div>
+                  <div class="menu-text">
+                    <p class="menu-step">Step 1</p>
+                    <p class="menu-name">Your Info</p>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="step-circle">2</div>
+                  <div class="menu-text">
+                    <p class="menu-step">Step 2</p>
+                    <p class="menu-name">Select Plan</p>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="step-circle">3</div>
+                  <div class="menu-text">
+                    <p class="menu-step">Step 3</p>
+                    <p class="menu-name">Add-Ons</p>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="step-circle">4</div>
+                  <div class="menu-text">
+                    <p class="menu-step">Step 4</p>
+                    <p class="menu-name">Summary</p>
+                  </div>
+                </li>
+              </ol>
             </div>
           </div>
-
-      <div class="form-container">
-        <h2>Create an Account</h2>
-        <form id="accountForm" action="#" method="post">
-          <div class="step active" id="step1">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required />
-
-            <input type="button" onclick="nextStep()" value="Next" />
+          <div class="container">
+            <h2>Create an Account</h2>
+            <form id="accountForm" action="#" method="post">
+              <div class="step active" id="step1">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required />
+    
+                <button type="button" id="nextButton">Next</button>
+              </div>
+              <div class="step" id="step2">
+                <!-- Step 2 content -->
+              </div>
+              <div class="step" id="step3">
+                <!-- Step 3 content -->
+              </div>
+              <div class="step" id="step4">
+                <!-- Step 4 content -->
+              </div>
+            </form>
           </div>
-
-          <div class="step" id="step2">
-            <h3>Choose a Plan:</h3>
-            <div class="options">
-              <div class="option" onclick="selectOption(this)">Option 1</div>
-              <div class="option" onclick="selectOption(this)">Option 2</div>
-              <div class="option" onclick="selectOption(this)">Option 3</div>
-            </div>
-            <input type="button" onclick="prevStep()" value="Previous" />
-            <input type="button" onclick="nextStep()" value="Next" />
-          </div>
-
-          <div class="step" id="step3">
-            <h3>Pick 3 Options:</h3>
-            <div class="options">
-              <div class="option" onclick="selectOption(this)">Option 1</div>
-              <div class="option" onclick="selectOption(this)">Option 2</div>
-              <div class="option" onclick="selectOption(this)">Option 3</div>
-            </div>
-            <input type="button" onclick="prevStep()" value="Previous" />
-            <input type="button" onclick="nextStep()" value="Next" />
-          </div>
-
-          <div class="step" id="step4">
-            <h3>Finishing Up:</h3>
-            <p>Name: <span id="summaryName"></span></p>
-            <p>Email: <span id="summaryEmail"></span></p>
-            <p>Phone: <span id="summaryPhone"></span></p>
-            <p>Chosen Plan: <span id="summaryPlan"></span></p>
-            <p>Options: <span id="summaryOptions"></span></p>
-            <input type="button" onclick="prevStep()" value="Previous" />
-            <input type="submit" value="Create Account" />
-          </div>
-        </form>
-      </div>
+        </div>
     </div>
-  </div>
-
-<script src="script.js"></script>
-
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
